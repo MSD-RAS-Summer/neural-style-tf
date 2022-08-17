@@ -1,0 +1,12 @@
+image_name: result
+content: /content/drive/MyDrive/neural-style-tf/image_input/ExampleImagesThresholddiagram.jpg
+styles[0]: 1.0 * /content/drive/MyDrive/neural-style-tf/styles/Horkey_2.jpg
+init_type: content
+content_weight: 0.1
+style_weight: 100000.0
+tv_weight: 0.0001
+content_layers: ['relu1_1', 'relu2_1', 'relu3_1', 'relu4_1', 'relu5_1']
+style_layers: ['relu1_1', 'relu2_1', 'relu3_1', 'relu4_1', 'relu5_1']
+optimizer_type: adam
+max_iterations: 5000
+max_image_size: 1400

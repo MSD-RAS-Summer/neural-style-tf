@@ -1,0 +1,40 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 1 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: neural_style.py
+--------------------------------------------------------------------------------
+neural_style.py:632:16: ERROR: Using member tf.contrib.opt.ScipyOptimizerInterface in deprecated module tf.contrib. tf.contrib.opt.ScipyOptimizerInterface cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'neural_style.py'
+ outputting to 'neural_style2.py'
+--------------------------------------------------------------------------------
+
+319:9: INFO: Added keywords to args of function 'tf.nn.conv2d'
+319:9: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+333:11: INFO: Added keywords to args of function 'tf.nn.avg_pool'
+333:11: INFO: Renamed keyword argument for tf.nn.avg_pool from value to input
+333:11: INFO: Renamed 'tf.nn.avg_pool' to 'tf.nn.avg_pool2d'
+336:11: INFO: Added keywords to args of function 'tf.nn.max_pool'
+336:11: INFO: Renamed keyword argument for tf.nn.max_pool from value to input
+336:11: INFO: Renamed 'tf.nn.max_pool' to 'tf.nn.max_pool2d'
+365:13: INFO: Added keywords to args of function 'tf.reduce_sum'
+374:34: INFO: Added keywords to args of function 'tf.reduce_sum'
+379:16: INFO: Added keywords to args of function 'tf.transpose'
+385:9: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+406:10: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+423:10: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+436:8: INFO: Added keywords to args of function 'tf.convert_to_tensor'
+447:20: INFO: Added keywords to args of function 'tf.reduce_sum'
+610:12: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+618:12: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+632:16: ERROR: Using member tf.contrib.opt.ScipyOptimizerInterface in deprecated module tf.contrib. tf.contrib.opt.ScipyOptimizerInterface cannot be converted automatically. tf.contrib will not be distributed with TensorFlow 2.0, please consider an alternative in non-contrib TensorFlow, a community-maintained repository such as tensorflow/addons, or fork the required code.
+637:16: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+--------------------------------------------------------------------------------
+
